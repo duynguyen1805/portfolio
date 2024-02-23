@@ -1,0 +1,52 @@
+[
+  {
+    "name": "BookingCare MERN Font-end",
+    "desc": "Full-Stack BookingCare cho phép tìm kiếm và đặt lịch khám bệnh. Quản lý, lên lịch khám bệnh cho bác sĩ",
+    "image": "bookingcaremern",
+    "category": "mern",
+    "links": {
+      "view": "#",
+      "code": "https://github.com/duynguyen1805/NLN_CT250_FE"
+    }
+  },
+  {
+    "name": "BookingCare MERN Back-end",
+    "desc": "Back-end BookingCare thiết kế các API chức năng thực hiện đặt lịch, trả về thông tin website.",
+    "image": "bookingcaremern_be",
+    "category": "mern",
+    "links": {
+      "view": "#",
+      "code": "https://github.com/duynguyen1805/NLN_CT250_BE"
+    }
+  },
+  {
+    "name": "Tìm bác sĩ",
+    "desc": "Project thực tập thực hiện tìm kiếm phòng khám, bác sĩ. Thực hiện đặt lịch. Quản lý đặt lịch, lịch khám của bác sỹ tại mỗi điểm phòng khám.",
+    "image": "timbacsi",
+    "category": "mern",
+    "links": {
+      "view": "https://timbacsi.vn/",
+      "code": "https://github.com/duynguyen1805/timbacsi"
+    }
+  },
+  {
+    "name": "2handmarket Font-end NextJS",
+    "desc": "Trang đăng tin thanh lý sản phẩm, tích hợp Đăng ký, Login with Google, chat online (Firebase), thông báo (socket.io), payment (MoMo)",
+    "image": "2handmarket_fe",
+    "category": "mern",
+    "links": {
+      "view": "https://2handmarket.vercel.app/",
+      "code": "https://github.com/duynguyen1805/2handmarket"
+    }
+  },
+  {
+    "name": "2handmarket Back-end",
+    "desc": "Project xây dựng API trên NodeJS + framework ExpressJS phục vụ các chức năng cho Font-end website 2handmarket",
+    "image": "2handmarket_be",
+    "category": "mern",
+    "links": {
+      "view": "#",
+      "code": "https://github.com/duynguyen1805/2handmarket_be"
+    }
+  }
+]
