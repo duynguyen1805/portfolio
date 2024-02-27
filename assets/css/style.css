@@ -1,6 +1,116 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
+/* .dark-mode {
+  background-color: #2b2b2b;
+  color: #fff;
+} */
+.dark-mode header {
+  /* background-color: #2b2b2b; Dark background color */
+  background-color: #00012b;
+  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.3); /* Dark mode shadow */
+  color: #fff; /* Light text color */
+}
+.dark-mode header .logo {
+  color: #fff;
+}
+.dark-mode header .logo:hover {
+  color: #ffe600;
+}
+.dark-mode header .navbar ul li a {
+  color: #fff;
+}
+.dark-mode header .navbar ul li a.active,
+.dark-mode header .navbar ul li a:hover {
+  color: #ffe600;
+  border-bottom: 0.2rem solid #ffe600;
+  padding: 0.5rem 0;
+}
+
+.dark-mode .home #particles-js {
+  background-color: #00012b;
+}
+.dark-mode .home .image img {
+  border: 6px solid #fff;
+}
+.dark-mode .home .content h2 {
+  color: #fff;
+}
+.dark-mode .home .content p {
+  color: #fff;
+}
+.dark-mode .home .content p span {
+  color: #ff7b00;
+}
+.dark-mode .social-icons li a {
+  border: 1px solid #fff;
+}
+
+.dark-mode .about {
+  background: #00012b;
+}
+.dark-mode .about {
+  background: #00012b;
+}
+.dark-mode .about h2 {
+  color: #fff;
+}
+.dark-mode .about h2 i {
+  color: #fff;
+}
+.dark-mode .about h2 span {
+  color: #ffe600;
+}
+.dark-mode .about .row .image img {
+  mix-blend-mode: normal;
+}
+.dark-mode .about .row .content h3,
+.dark-mode .about .row .content .tag,
+.dark-mode .about .row .content p {
+  color: #fff;
+}
+.dark-mode .about .row .content .box-container .box p span {
+  color: #ffe600;
+}
+
+.dark-mode .skills {
+  background: #00012b;
+}
+.dark-mode .skills .container {
+  background: linear-gradient(to bottom, #57059e, #4a00e0);
+}
+
+.dark-mode .education {
+  background: #00012b;
+}
+.dark-mode .education .heading,
+.dark-mode .education .heading i {
+  color: #fff;
+}
+.dark-mode .education .heading span {
+  color: #ffe600;
+}
+.dark-mode .education .box-container .box {
+  border: 5px solid #fff;
+  background: linear-gradient(to bottom, #57059e, #4a00e0);
+}
+.dark-mode .education .box-container .box .content,
+.dark-mode .education .box-container .box .content h3,
+.dark-mode .education .box-container .box .content h4 {
+  color: #fff;
+}
+
+.dark-mode .experience {
+  background: #00012b;
+}
+.dark-mode .experience .heading,
+.dark-mode .experience .heading i {
+  color: #fff;
+}
+.dark-mode .experience .timeline::after {
+  background: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -123,6 +233,51 @@ header .navbar ul li a:hover {
   border-bottom: 0.2rem solid #011aff;
   padding: 0.5rem 0;
 }
+/* toggle darkmode*/
+.dark-mode-toggle {
+  display: none; /* Hide checkbox */
+}
+
+/* Style the label as the toggle button with background image */
+.dark-mode-toggle + label {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  background-color: #ccc;
+  margin-top: 8px;
+}
+
+/* Style the toggle handle with background image */
+.dark-mode-toggle + label:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-image: url("../images/lightmode.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 1px;
+  left: 1px;
+  transition: 0.3s;
+}
+
+/* Adjust the toggle handle for dark mode and switch background image */
+/* .dark-mode-toggle:checked + label:before {
+  background-image: url("../images/darkmode.png");
+  transform: translateX(24px);
+} */
+
+/* Dark Mode styles */
+.dark-mode .dark-mode-toggle + label:before {
+  background-image: url("../images/darkmode.png");
+  transform: translateX(24px);
+}
+
 /* navbar ends */
 
 /* hamburger icon starts*/
@@ -808,7 +963,7 @@ header .navbar ul li a:hover {
   height: 25px;
   right: -17px;
   background-color: rgb(255, 255, 255);
-  border: 4px solid #ff9f55;
+  border: 4px solid #ffd900;
   top: 15px;
   border-radius: 50%;
   z-index: 100;
@@ -833,9 +988,9 @@ header .navbar ul li a:hover {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #f68c09;
+  border: medium solid #ffd900;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #f68c09;
+  border-color: transparent transparent transparent #ffd900;
 }
 /* arrows pointing left  */
 .experience .right::before {
@@ -846,15 +1001,16 @@ header .navbar ul li a:hover {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid #f68c09;
+  border: medium solid #ffd900;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #f68c09 transparent transparent;
+  border-color: transparent #ffd900 transparent transparent;
 }
 .experience .right::after {
   left: -16px;
 }
 .experience .content {
-  background-color: #f68c09;
+  /* background-color: #f68c09; */
+  background-color: #ffd900;
   position: relative;
   border-radius: 6px;
 }
@@ -868,11 +1024,12 @@ header .navbar ul li a:hover {
   padding-bottom: 1rem;
 }
 .experience .content .desc h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
+  padding-bottom: 0.5rem;
 }
 .experience .content .desc p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 /* view all button */
 .morebtn {

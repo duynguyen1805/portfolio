@@ -260,3 +260,34 @@ srtop.reveal(".experience .timeline .container", { interval: 400 });
 /* SCROLL CONTACT */
 srtop.reveal(".contact .container", { delay: 400 });
 srtop.reveal(".contact .container .form-group", { delay: 400 });
+
+/* DARK MODE */
+document.addEventListener("DOMContentLoaded", function () {
+  const darkModeToggle = document.getElementById("darkModeToggle");
+  const labelForDarkModeToggle = document.querySelector(
+    'label[for="darkModeToggle"]'
+  );
+
+  // Check the saved mode from localStorage
+  const isDarkMode = localStorage.getItem("darkMode") === "enabled";
+
+  // Set initial mode
+  setDarkMode(isDarkMode);
+
+  // Toggle mode on checkbox change
+  darkModeToggle.addEventListener("change", () => {
+    setDarkMode(darkModeToggle.checked);
+  });
+
+  function setDarkMode(enable) {
+    if (enable) {
+      document.body.classList.add("dark-mode");
+      labelForDarkModeToggle.classList.add("darkModeToggle");
+      localStorage.setItem("darkMode", "enabled");
+    } else {
+      document.body.classList.remove("dark-mode");
+      labelForDarkModeToggle.classList.remove("darkModeToggle");
+      localStorage.setItem("darkMode", null);
+    }
+  }
+});
