@@ -268,15 +268,17 @@ document.addEventListener("DOMContentLoaded", function () {
     'label[for="darkModeToggle"]'
   );
 
-  // Check the saved mode from localStorage
   const isDarkMode = localStorage.getItem("darkMode") === "enabled";
 
-  // Set initial mode
+  // initial mode
   setDarkMode(isDarkMode);
 
-  // Toggle mode on checkbox change
+  // toggle mode on checkbox change
   darkModeToggle.addEventListener("change", () => {
     setDarkMode(darkModeToggle.checked);
+    // dispatch event theme mode change => particles => app.js
+    const darkModeChangeEvent = new Event("darkModeChange");
+    document.dispatchEvent(darkModeChangeEvent);
   });
 
   function setDarkMode(enable) {
