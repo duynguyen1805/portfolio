@@ -48,5 +48,15 @@
       "view": "#",
       "code": "https://github.com/duynguyen1805/2handmarket_be"
     }
+  },
+  {
+    "name": "AI SAAS NextJS 14, Cleck, Shadcn (01/03/2024 - ...)",
+    "desc": "Project tổng hợp các công cụ AI, đang phát triển ...",
+    "image": "aisaas",
+    "category": "mern",
+    "links": {
+      "view": "#",
+      "code": "https://github.com/duynguyen1805/ai-saas"
+    }
   }
 ]
